@@ -1,0 +1,8 @@
+wget https://downloads-global.3cx.com/downloads/debian10iso/debian-amd64-netinst-3cx.iso
+sudo apt-get update
+sudo apt-get install net-tools curl
+wget https://downloads-global.3cx.com/downloads/debian10iso/debian-amd64-netinst-3cx.iso
+sudo mkdir /mnt/iso
+sudo mount -o loop debian-amd64-netinst-3cx.iso /mnt/iso
+cd /mnt/iso
+sudo ./install-3cx
